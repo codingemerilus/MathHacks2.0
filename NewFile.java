@@ -1,2 +1,14 @@
-System.out.println ("Hello"); 
-System.out.println ("How are you?"); 
+public class NewFile{
+
+    public static void main (String [] args){
+
+
+
+
+}
+
+
+
+
+} 
+
