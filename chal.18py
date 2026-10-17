@@ -1,0 +1,145 @@
+"""
+firststring= "HELLO first"
+secondstring = "Second HIIII"
+print(firststring+secondstring)
+print(firststring*3)
+print(secondstring*3)
+firstup = firststring.upper()
+secondup = secondstring.upper()
+print(firstup+secondup)
+firstlow = firststring.lower()
+secondlow = secondstring.lower()
+print(firstlow*5)
+print(secondlow*5)
+print(firststring[3])
+print(secondstring[3])
+print(firststring[3:9])
+print(secondstring[3:9])
+
+
+username = input("Enter your user name: ")
+print(username.isalpha())
+passwords = input("Enter your password")
+print(passwords.isdigit())
+
+
+message = input("enter your message: ")
+messagenospace = message.strip()
+print(messagenospace)
+print(len(messagenospace))
+print(messagenospace.find("911"))
+
+##chal 22
+abcd= input("Enter something: ")
+xyz= abcd.find("e")
+if xyz!=-1:
+    print("e")
+else:
+    print("invalid input")
+
+
+##chal 23
+h = int(input("enter your height: "))
+if (h>4):
+    print("You are allowed to ride on the behemoth!!")
+else:
+    print("sorry you cant")
+
+##chal24
+h = int(input("enter your height in inches: "))
+if (h>=54):
+    print("You are allowed to ride on the Flight Deck, Behemoth, Leviathan, Vortex, Lumber Jack, Flying Canoes, Tree Top Adventure, Taxi Jam, Sugar Shack!!!")
+elif (h>=48):
+    print("You are allowed to ride on the Vortex, Lumber Jack, Flying Canoes, Tree Top Adventure, Taxi Jam, Sugar Shack!!")
+elif (h>=40):
+    print("You are allowed to ride on the Tree Top Adventure, Taxi Jam, Sugar Shack!")
+else:
+    ("You are too short")
+##chal 26
+import random
+rand_num = random.randint(1,6)
+usernum = int(input("enter a number:"))
+if (rand_num==usernum):
+    print("good job!")
+elif (rand_num>usernum):
+    print("the number is greater than your guess")
+elif (rand_num<usernum):
+    print("the number is less than your guess")
+else:
+    print("you got it wrong")
+     
+a = [1,3,4,5,8,90]
+print(a[2])
+print(a[0])
+     
+##chal27
+vaca= ["Japan", "China", "Mexico", "Fiji", "Thailand", "Italy"]
+print("This is your list of destinations: Japan, China, Mexico, Fiji, Thailand, Italy \n1.Add a travel destination \n2.Find a travel destination \n3. Remove a travel destination \n4. Sort destinations by alphabet \n5. Count destinations: ")
+choice=int(input())
+
+if (choice==1):
+    newdest= input("What destination would you like to add:")
+    vaca.append(newdest)
+    print(vaca)
+elif (choice==2):
+    finddest= input("Which travel destination would you like to find: ")
+    if finddest in vaca:
+        print(vaca)
+    else:
+        print("Not in list")
+elif (choice==3):
+    removeitem= input("which item would you like to remove: ")
+    vaca.remove(removeitem)
+    print(vaca)
+elif (choice==4):
+    vaca.sort()
+    print(vaca)
+else:
+    print("invalid")
+
+    Write a program that checks if the input string has an “e", and if it does, print "Has e". Otherwise, print “invalid input”. Remember you can use string functions that you learned before to help you.
+
+gro=["apple", "yogurt", "milk", "rice", "avacados", "chicken"]
+print("You can \n1. add an item\n2. Print list\n3. Sort items\n4. Remove an item\n5. count groceries\n6. replace grocery item")
+choice=int(input())
+
+if (choice==1):
+    additem= input("What item would you like to add?: ")
+    gro.append(additem)
+    print(gro)
+elif (choice==2):
+    print(gro)
+elif (choice==3):
+    gro.sort()
+    print(gro)
+elif (choice==4):
+    removeitem = input("What item would you like to remove?:")
+    gro.remove(removeitem)
+    print(gro)
+elif (choice==5):
+    gro.count(gro)
+    print(gro)
+else:
+    print("invalid")
+
+
+counter=1;
+while counter < 11:
+    print("i am counting" + str(counter))
+    counter+=1
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
